@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Modules</title>
+    <script src="js/angular.js"></script>
+    <script src="js/default-module-cola.js"></script>
+</head>
+<body ng-app="default-module" ng-cloak="">
+<div ng-init="lista=[1,2,3,4,5,6,7,8,9,10]">
+    <ul ng-show="lista.length > 0">
+        <li ng-repeat="item in lista"
+            ng-if="item%2">{{item}}</li>
+    </ul>
+</div>
+</body>
+</html>
